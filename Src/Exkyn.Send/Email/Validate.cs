@@ -2,7 +2,7 @@
 
 namespace Exkyn.Send.Email
 {
-    public static class Validate
+    internal static class Validate
     {
         public static void ValidateEmail(string email)
         {
