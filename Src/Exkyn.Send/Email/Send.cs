@@ -66,6 +66,13 @@ namespace Exkyn.Send.Email
             _mailMessage.IsBodyHtml = true;
         }
 
+        /// <summary>
+        /// Faz o envio do e-mail para um destinatalio
+        /// </summary>
+        /// <param name="email">E-mail do destinatário</param>
+        /// <param name="subject">Assunto do e-mail para o destinatário</param>
+        /// <param name="message">Mensagem para o destinatário. Pode ser com <html> ou apenas texto.</param>
+        /// <returns></returns>
         public bool SendEmail(string email, string subject, string message)
         {
             AddEmail(email);
@@ -79,6 +86,13 @@ namespace Exkyn.Send.Email
             return true;
         }
 
+        /// <summary>
+        /// Envia e-mails para múltiplos e-mails
+        /// </summary>
+        /// <param name="emails">Lista de e-mail de destinatários</param>
+        /// <param name="subject">Assunto do e-mail para o destinatário</param>
+        /// <param name="message">Mensagem para o destinatário. Pode ser com <html> ou apenas texto.</param>
+        /// <returns></returns>
         public bool SendEmail(List<string> emails, string subject, string message)
         {
             foreach(var email in emails)
