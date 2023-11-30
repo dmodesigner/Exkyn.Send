@@ -9,7 +9,7 @@ namespace Exkyn.Send.Email
         private MailMessage _mailMessage;
         private SmtpClient _smtpClient;
 
-        private string GetSmtpHost(string email) => "smtp" + email.Split('@')[1];
+        private string GetSmtpHost(string email) => "smtp." + email.Split('@')[1].Trim();
 
         private void ValidateEmail(string email)
         {
