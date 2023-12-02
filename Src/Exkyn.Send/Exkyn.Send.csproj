@@ -4,6 +4,37 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>Exkyn.Send</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Daniel Moura de Oliveira</Authors>
+    <Company>Exkyn Tecnologia</Company>
+    <RepositoryUrl>https://github.com/dmodesigner/Exkyn.Send</RepositoryUrl>
+    <Title>Exkyn Send</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageIcon>icon-exkyn.png</PackageIcon>
+    <PackageTags>Exkyn; Exkyn.Send</PackageTags>
+    <Description>Biblioteca com métodos para envio de mensagens em .NET</Description>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Images\icon-exkyn.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Exkyn.Core" Version="8.0.0" />
+  </ItemGroup>
 
 </Project>
